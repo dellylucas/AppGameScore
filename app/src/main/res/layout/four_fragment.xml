@@ -12,20 +12,23 @@
         android:text="Four Fragment"
         android:textSize="50sp" />
 
+
     <EditText
+        android:id="@+id/fourEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="holas" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fourButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="siguiente" />
 
     <TextView
+        android:id="@+id/fourTextview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Revert: "
         android:textSize="50sp" />
-
 </LinearLayout>

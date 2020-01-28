@@ -13,16 +13,19 @@
         android:textSize="50sp" />
 
     <EditText
+        android:id="@+id/twoEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="holas" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/twoButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="siguiente" />
 
     <TextView
+        android:id="@+id/twoTextview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Revert: "
