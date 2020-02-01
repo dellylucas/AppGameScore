@@ -21,6 +21,12 @@
             android:id="@+id/action_oneFragment_to_threeFragment"
             app:destination="@id/threeFragment"
             app:enterAnim="@anim/fragment_fade_enter" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="www.example.com/{myarg}" />
+        <argument
+            android:name="myarg"
+            android:defaultValue="Android!" />
     </fragment>
     <fragment
         android:id="@+id/twoFragment"
@@ -50,14 +56,14 @@
         android:id="@+id/fourFragment"
         android:name="com.dfl.appgamescore.FourFragment"
         android:label="four_fragment"
-        tools:layout="@layout/four_fragment" >
+        tools:layout="@layout/four_fragment">
         <argument
             android:name="flowEditResul"
             app:argType="string"
             app:nullable="true" />
         <argument
             android:name="flowEditIntResult"
-            app:argType="integer"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:argType="integer" />
     </fragment>
 </navigation>

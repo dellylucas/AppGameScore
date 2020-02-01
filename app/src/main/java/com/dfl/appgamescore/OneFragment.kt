@@ -16,12 +16,18 @@ import kotlinx.android.synthetic.main.one_fragment.*
 class OneFragment : Fragment() {
 
     lateinit var navController: NavController
-
+    private val safeArgs: OneFragmentArgs by navArgs()
     companion object {
         fun newInstance() = OneFragment()
     }
 
     private lateinit var viewModel: OneViewModel
+    private lateinit var movieID: String
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,6 +40,8 @@ class OneFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
 
+        movieID = safeArgs.myarg
+        oneTextview.text = movieID
         oneButton.setOnClickListener {
             val textSend = oneEdit.text.toString()
             val action = OneFragmentDirections.actionOneFragmentToTwoFragment(textSend)
