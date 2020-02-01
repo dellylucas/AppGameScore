@@ -50,7 +50,7 @@ class OneFragment : Fragment() {
         }
         oneDButton.setOnClickListener {
             val textSend = oneEdit.text.toString()
-            val action = OneFragmentDirections.actionOneFragmentToThreeFragment(textSend,Documento(1,"doc"))
+            val action = OneFragmentDirections.actionOneFragmentToThreeFragment(textSend,DocumentEntity(1,"doc"))
             findNavController().navigate(action)
         }
     }

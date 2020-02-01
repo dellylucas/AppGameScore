@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class Documento(
+class DocumentEntity(
     var id: Int? = null,
     var name: String? = null
 ) : Parcelable
