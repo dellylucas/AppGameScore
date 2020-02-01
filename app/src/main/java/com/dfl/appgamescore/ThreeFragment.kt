@@ -29,7 +29,7 @@ class ThreeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        safeArgs.flowEditPass.let { threeTextview.text = it }
+        safeArgs.document?.let { threeTextview.text = it.name }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
